@@ -1,6 +1,7 @@
 body {
 	width: 100%;
 	color: #888;
+	font-family: 'PT Sans', sans-serif;
 }
 
 a {
@@ -27,18 +28,35 @@ header {
 	border-bottom: 10px solid #888;
 }
 
-nav a {
+#facebook a {
 	z-index: 5;
+	position: fixed;
+	float: left;
+	margin-top: 25px;
+	margin-left: 40px;
 }
 
-nav a img {
+#twitter a {
+	z-index: 5;
+	position: fixed;
+	float: left;
+	margin-top: 25px;
+	margin-left: 150px;
+}
+
+/*#social-links .above {
+	z-index: 6;
+	margin-left: 40px;
+}*/
+
+/*social-links a img {
 	width: 40px;
 	height: 40px;
 	margin-top: 25px;
 	margin-left: 15px;
 	padding: 10px 25px;
 	position: relative;
-}
+}*/
 
 header h1 {
 	float: right;
