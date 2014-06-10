@@ -98,6 +98,10 @@ footer {
 	width: 100%;
 }
 
+.up-arrows {
+	font-size: 1.25em;
+}
+
 @media (max-width: 600px) {
 	nav {
 		display: none;
