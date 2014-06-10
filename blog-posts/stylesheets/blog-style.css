@@ -21,7 +21,13 @@ nav a img {
 	margin-left: 15px;
 	padding: 10px 25px;
 	position: relative;
+}
 
+header h1 {
+	float: right;
+	margin-right: 45px;
+	position: relative;
+	margin-top: 40px;
 }
 
 #profile-photo {
