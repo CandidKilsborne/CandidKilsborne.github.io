@@ -11,16 +11,15 @@ header {
 	top: 0;
 	position: fixed;
 	z-index: 2;
-	border-bottom: 3px solid #888;
+	border-bottom: 10px solid #888;
 }
 
 nav a img {
-	border: 1px solid #888;
 	width: 40px;
 	height: 40px;
 	margin-top: 25px;
-	margin-left: 35px;
-	padding: 10px 35px;
+	margin-left: 15px;
+	padding: 10px 25px;
 	position: relative;
 
 }
@@ -38,7 +37,7 @@ nav a img {
 
 #profile-photo a img {
 	border-radius: 100%;
-	border: 3px solid #888;
+	border: 10px solid #888;
 }
 
 #posts {
@@ -60,10 +59,11 @@ nav a img {
 	text-align: left;
 }
 
-/*.screenshots {
+.screenshots {
 	max-width: 350px;
 	max-height: 100%;
-	margin: 0 auto;*/
+	margin: 0 auto;
+	text-align: center;
 
 }
 footer {
