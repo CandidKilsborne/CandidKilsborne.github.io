@@ -1,3 +1,7 @@
+/********************
+GENERAL
+********************/
+
 body {
 	width: 100%;
 	color: rgba(39, 40, 34, 1.0);
@@ -17,6 +21,10 @@ a:visited {
 	color: rgba(39, 40, 34, 1.0);
 }
 
+/********************
+HEADER
+********************/
+
 header {
 	background-color: #f4f4f4;
 	opacity: .7;
@@ -27,36 +35,6 @@ header {
 	z-index: 2;
 	border-bottom: 10px solid rgba(39, 40, 34, 1.0);
 }
-
-#facebook a {
-	z-index: 5;
-	position: fixed;
-	float: left;
-	margin-top: 25px;
-	margin-left: 40px;
-}
-
-#twitter a {
-	z-index: 5;
-	position: fixed;
-	float: left;
-	margin-top: 25px;
-	margin-left: 150px;
-}
-
-/*#social-links .above {
-	z-index: 6;
-	margin-left: 40px;
-}*/
-
-/*social-links a img {
-	width: 40px;
-	height: 40px;
-	margin-top: 25px;
-	margin-left: 15px;
-	padding: 10px 25px;
-	position: relative;
-}*/
 
 header h1 {
 	float: right;
@@ -81,6 +59,34 @@ header h1 {
 	border: 10px solid rgba(39, 40, 34, 1.0);
 }
 
+/********************
+SOCIAL LINKS
+********************/
+
+#facebook a {
+	z-index: 5;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	float: left;
+	margin-top: 25px;
+	margin-left: 40px;
+}
+
+#twitter a {
+	z-index: 5;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	float: left;
+	margin-top: 25px;
+	margin-left: 150px;
+}
+
+/********************
+BLOG POSTS
+********************/
+
 #posts {
 	width: 960px;
 	color: rgba(39, 40, 34, 1.0);
@@ -101,13 +107,25 @@ header h1 {
 	text-align: left;
 }
 
+/********************
+IMAGES
+********************/
+
 .screenshots {
 	max-width: 350px;
 	max-height: 100%;
 	margin: 0 auto;
 	text-align: center;
-
 }
+
+.img-compare {
+	float: right;
+}
+
+/********************
+FOOTER
+********************/
+
 footer {
 	background-color: #f4f4f4;
 	opacity: .7;
@@ -121,20 +139,35 @@ footer {
 	font-size: 1.25em;
 }
 
-@media (max-width: 600px) {
-	nav {
+/********************
+@media
+********************/
+
+@media handheld, screen and (max-width: 800px) {
+	header h1 {
 		display: none;
-	}	
+	}
+}
+
+@media handheld, screen and (max-width: 600px) {
 	#posts {
 		width: 100%;
 	}
-	 header h1 {
-	 	text-align: center;
-	 	margin: 0 auto;
-	 }
+	#twitter a {
+		width: 20px;
+		height: 20px;
+	}
+	#facebook a {
+		width: 20px;
+		height: 20px;
+	}
 }
-@media (max-width: 480px) {
-	header h1 {
+
+@media handheld, screen and (max-width: 420px) {
+	#twitter a {
+		display: none;
+	}
+	#facebook a {
 		display: none;
 	}
 }
