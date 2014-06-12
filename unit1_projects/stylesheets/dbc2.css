@@ -1,0 +1,74 @@
+body {
+	width: 100%;
+	background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727));
+}
+
+nav {
+	float: left;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
+
+nav ul li a img {
+	border-radius: 100%;
+	border: 5px solid rgba(26, 126, 239, 1.0);
+}
+
+nav ul li a:hover img {
+	border: 5px solid green;
+}
+
+#overview {
+	width: 600px;
+	margin: 0 auto;
+	border: 2px solid black;
+	padding: 10px;
+	background-color: rgba(26, 126, 239, 1.0);
+}
+
+#overview h1 {
+	text-align: center;
+	font-size: 2em;
+}
+
+#overview p {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#guitar-list {
+	width: 675px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.5em;
+	padding: 25px 0;
+}
+
+#guitar-list img {
+	border-radius: 25%;
+	border: 2px solid black;
+}
+
+#strat {
+	border: 2px solid black;
+	padding: 15px;
+	background-color: rgba(26, 126, 239, 1.0);
+}
+
+#les-paul {
+	border: 2px solid black;
+	padding: 15px;
+	background-color: rgba(26, 126, 239, 1.0);
+}
+
+#double-neck {
+	border: 2px solid black;
+	padding: 15px;
+	background-color: rgba(26, 126, 239, 1.0);
+}
