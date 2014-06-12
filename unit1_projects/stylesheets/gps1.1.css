@@ -1,0 +1,70 @@
+body {
+      width: 100%
+      background-color: #f3f3f3;
+    }
+    
+    header h1 {
+      font-size: 1.75em;
+      margin-left: 570px;
+      text-decoration: underline;
+    }
+    
+    
+    h1 h2 {
+      text-align: center;
+    }
+  
+    #wrap {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    #sections {
+      margin-left: 200px;
+      text-align: center;
+    }
+    
+    .list {
+      list-style: none;
+    }
+    
+    .fix {
+      clear: both;
+    }
+    
+    #pair {
+      width: 415px;
+      height: 425px;
+      float: left;
+      margin: 15px;
+      padding: 25px;
+      border: 2px solid black;
+    }
+    
+    #importance {
+      width: 415px;
+      height: 425px;
+      float: left;
+      margin: 15px;
+      padding: 25px;
+      border: 2px solid black;
+    }
+    
+    #nav {
+      width: 415px;
+      height: 425px;
+      float: left;
+      margin: 15px;
+      padding: 25px;
+      border: 2px solid black;
+    }
+    
+    #driver {
+      width: 415px;
+      height: 425px;
+      float: left;
+      margin: 15px;
+      padding: 25px;
+     /* margin-right: 120px;*/
+      border: 2px solid black;
+    }
