@@ -73,6 +73,10 @@ SOCIAL LINKS
 	margin-left: 40px;
 }
 
+#facebook a:hover {
+	
+}
+
 #twitter a {
 	z-index: 5;
 	width: 40px;
@@ -81,6 +85,10 @@ SOCIAL LINKS
 	float: left;
 	margin-top: 25px;
 	margin-left: 150px;
+}
+
+#twitter a:hover {
+
 }
 
 /********************
@@ -105,6 +113,7 @@ BLOG POSTS
 	padding: 20px;
 	margin: 50px 0;
 	text-align: left;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
 
 /********************
