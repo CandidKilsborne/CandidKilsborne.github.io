@@ -50,11 +50,11 @@ header h1 {
 	position: relative;
 	margin: 0 auto;
 	position: fixed;
+	transition-duration: 1.5s;
 	-webkit-transition-duration: 1.5s;
 	-moz-transition-duration: 1.5s;
 	-o-transition-duration: 1.5s;
 	-ms-transition-duration: 1.5s;
-	transition-duration: 1.5s;
 }
 
 #profile-photo a img {
@@ -63,11 +63,11 @@ header h1 {
 }
 
 #profile-photo a:hover img {
+	transform: rotate(360deg);
 	-webkit-transform: rotate(360deg);
 	-moz-transform: rotate(360deg);
 	-o-transform: rotate(360deg);
 	-ms-transform: rotate(360deg);
-	transform: rotate(360deg);
 }
 
 /********************
@@ -118,11 +118,11 @@ BLOG POSTS
 	text-align: left;
 	box-shadow: 0 0 30px rgba(0, 0, 0, .5);
 	/* TRANSITION FOR INDEX FILE ONLY */
+	transition-delay: .25s;
 	-webkit-transition-delay: .25s;
 	-moz-transition-delay: .25s;
 	-0-transition-delay: .25s;
 	-ms-transition-delay: .25s;
-	transition-delay: .25s;
 }
 
 /* INDEX FILE ONLY */
@@ -216,7 +216,11 @@ footer small {
 
 @media handheld, screen and (max-width: 420px) {
 	#profile-photo {
+		transform: scale(.8);
 		-webkit-transform: scale(.8);
+		-moz-transform: scale(.8);
+		-o-transform: scale(.8);
+		-ms-transform: scale(.8);
 	}
 	#top-of-page {
 		margin-top: -60px;

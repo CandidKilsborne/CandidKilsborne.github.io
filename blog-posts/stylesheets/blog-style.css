@@ -52,11 +52,11 @@ header h1 {
 	float: left;
 	margin: 0 auto;
 	position: fixed;
+	transition-duration: 1.5s;
 	-webkit-transition-duration: 1.5s;
 	-moz-transition-duration: 1.5s;
 	-o-transition-duration: 1.5s;
 	-ms-transition-duration: 1.5s;
-	transition-duration: 1.5s;
 }
 
 #profile-photo a img {
@@ -65,11 +65,11 @@ header h1 {
 }
 
 #profile-photo a:hover img {
+	transform: rotate(360deg);
 	-webkit-transform: rotate(360deg);
 	-moz-transform: rotate(360deg);
 	-o-transform: rotate(360deg);
 	-ms-transform: rotate(360deg);
-	transform: rotate(360deg);
 }
 
 /********************
@@ -234,7 +234,11 @@ footer small {
 
 @media handheld, screen and (max-width: 420px) {
 	#profile-photo {
+		transform: scale(.8);
 		-webkit-transform: scale(.8);
+		-moz-transform: scale(.8);
+		-o-transform: scale(.8);
+		-ms-transform: scale(.8);
 	}
 	#posts article img {
 		max-width: 100%;
