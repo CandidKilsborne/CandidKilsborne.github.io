@@ -52,19 +52,24 @@ header h1 {
 	float: left;
 	margin: 0 auto;
 	position: fixed;
+	-webkit-transition-duration: 1.5s;
+	-moz-transition-duration: 1.5s;
+	-o-transition-duration: 1.5s;
+	-ms-transition-duration: 1.5s;
+	transition-duration: 1.5s;
 }
 
 #profile-photo a img {
 	border-radius: 100%;
 	border: 10px solid rgba(39, 40, 34, 1.0);
-	transition-duration: 1s;
 }
 
 #profile-photo a:hover img {
 	-webkit-transform: rotate(360deg);
-	-webkit-transform: opacity(.5);
-
-	
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
 }
 
 /********************
@@ -81,10 +86,6 @@ SOCIAL LINKS
 	margin-left: 40px;
 }
 
-#facebook a:hover {
-	
-}
-
 #twitter a {
 	z-index: 5;
 	width: 40px;
@@ -93,10 +94,6 @@ SOCIAL LINKS
 	float: left;
 	margin-top: 25px;
 	margin-left: 150px;
-}
-
-#twitter a:hover {
-
 }
 
 /********************
@@ -132,22 +129,15 @@ BLOG POSTS
 	text-decoration: none;
 }
 
+/* USE FOR IMAGES IN POSTS */
 #posts article img {
 	position: relative;
 	margin: 10px auto;
-
 }
 
 /********************
 IMAGES
 ********************/
-
-.screenshots {
-	max-width: 350px;
-	max-height: 100%;
-	margin: 0 auto;
-	text-align: center;
-}
 
 .img-compare {
 	float: right;
@@ -170,7 +160,7 @@ footer {
 footer a {
 	float: right;
 	padding-right: 2%;
-	padding-bottom: 2.75%;
+	padding-bottom: 0.70%;
 }
 
 footer small {
@@ -188,13 +178,6 @@ footer small {
 ********************/
 
 @media handheld, screen and (max-width: 950px) {
-/*	#profile-photo {
-		width: 40%;
-		top: 10px;
-		z-index: 3;
-		margin: 0 0 0 -30%;
-		position: fixed;
-	}*/
 	#posts h1.invisible {
 		display: visible;
 	}
@@ -202,21 +185,11 @@ footer small {
 		position: relative;
 		float: right;
 		font-size: 1.5em;
-		
 	}	
-/*	#facebok {
-		float:right;
-		position: absolute;
-	}
-	#twitter {
-		float: right;
-		position: absolute;
-		margin-right: 30%;
-	}*/
+
 	#facebook #twitter {
 		display: none;
 	}
-
 }
 
 @media handheld, screen and (max-width: 800px) {
@@ -262,7 +235,6 @@ footer small {
 @media handheld, screen and (max-width: 420px) {
 	#profile-photo {
 		-webkit-transform: scale(.8);
-
 	}
 	#posts article img {
 		max-width: 100%;
@@ -270,9 +242,7 @@ footer small {
 	#posts {
 		width: 90%;
 	}
-
 	#posts article {
 		height: 100%;
 	}
-
 }

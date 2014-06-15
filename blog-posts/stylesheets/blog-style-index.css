@@ -50,20 +50,24 @@ header h1 {
 	position: relative;
 	margin: 0 auto;
 	position: fixed;
-	-webkit-transition-duration: 2s;
+	-webkit-transition-duration: 1.5s;
+	-moz-transition-duration: 1.5s;
+	-o-transition-duration: 1.5s;
+	-ms-transition-duration: 1.5s;
+	transition-duration: 1.5s;
 }
 
 #profile-photo a img {
 	border-radius: 100%;
 	border: 10px solid rgba(39, 40, 34, 1.0);
-	transition-duration: 1s;
 }
 
 #profile-photo a:hover img {
 	-webkit-transform: rotate(360deg);
-	-webkit-transform: opacity(.5);
-
-	
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
 }
 
 /********************
@@ -80,10 +84,6 @@ SOCIAL LINKS
 	margin-left: 40px;
 }
 
-#facebook a:hover {
-	
-}
-
 #twitter a {
 	z-index: 5;
 	width: 40px;
@@ -92,10 +92,6 @@ SOCIAL LINKS
 	float: left;
 	margin-top: 25px;
 	margin-left: 150px;
-}
-
-#twitter a:hover {
-
 }
 
 /********************
@@ -112,10 +108,6 @@ BLOG POSTS
 	clear: both;
 }
 
-#posts h1.invisible {
-	display: none;
-}
-
 #posts article {
 	background-color: #f4f4f4;
 	opacity: .7;
@@ -124,12 +116,16 @@ BLOG POSTS
 	padding: 20px;
 	margin: 50px 0;
 	text-align: left;
-	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+	/* TRANSITION FOR INDEX FILE ONLY */
 	-webkit-transition-delay: .25s;
 	-moz-transition-delay: .25s;
+	-0-transition-delay: .25s;
+	-ms-transition-delay: .25s;
 	transition-delay: .25s;
 }
 
+/* INDEX FILE ONLY */
 #posts article:hover {
 	box-shadow: 0 0 20px tomato;
 }
@@ -140,21 +136,6 @@ BLOG POSTS
 
 #posts article:hover a {
 	text-decoration: none;
-}
-
-/********************
-IMAGES IN POSTS
-********************/
-
-.screenshots {
-	max-width: 350px;
-	max-height: 100%;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.img-compare {
-	float: right;
 }
 
 /********************
@@ -174,7 +155,7 @@ footer {
 footer a {
 	float: right;
 	padding-right: 2%;
-	padding-bottom: 2.75%;
+	padding-bottom: 0.70%;
 }
 
 footer small {
@@ -191,13 +172,6 @@ footer small {
 @media
 ********************/
 @media handheld, screen and (max-width: 950px) {
-/*	#profile-photo {
-		width: 40%;
-		top: 10px;
-		z-index: 3;
-		margin: 0 0 0 -30%;
-		position: fixed;
-	}*/
 	#posts h1.invisible {
 		display: visible;
 	}
@@ -205,21 +179,7 @@ footer small {
 		position: relative;
 		float: right;
 		font-size: 1.5em;
-		
 	}	
-/*	#facebok {
-		float:right;
-		position: absolute;
-	}
-	#twitter {
-		float: right;
-		position: absolute;
-		margin-right: 30%;
-	}*/
-	#facebook #twitter {
-		display: none;
-	}
-
 }
 
 @media handheld, screen and (max-width: 800px) {
@@ -252,19 +212,24 @@ footer small {
 	footer {
 		opacity: 1.0;
 	}
-	#twitter {
-		margin-top: 25px;
-		margin-left: 32%;
-
-	}
-	#facebook {
-		margin-left: 37%;
-	}
 }
 
 @media handheld, screen and (max-width: 420px) {
 	#profile-photo {
 		-webkit-transform: scale(.8);
-
+	}
+	#top-of-page {
+		margin-top: -60px;
+		clear: both;
+	}
+	#twitter {
+		margin-top: 20%;
+		position: absolute;
+		margin-left: 32%;
+	}
+	#facebook {
+		margin-left: 37%;
+		margin-top: 20%;
+		position: absolute;
 	}
 }
