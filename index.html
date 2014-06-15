@@ -11,6 +11,9 @@
 		<!-- css links -->
 		<link rel="stylesheet" href="blog-posts/stylesheets/normalize.css">
 		<link rel="stylesheet" href="blog-posts/stylesheets/blog-style.css">
+		<link rel="stylesheet" href="blog-posts/stylesheets/blog-style-index.css">
+		<!-- Live Reload -->
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	</head>
 	<body>
 		<div id="profile-photo">
@@ -31,7 +34,9 @@
 			<br>
 		</div>
 		<!-- Blog Posts -->
-		<div id="posts">
+		<div id="posts" class="index">
+			<!-- Blog Title Smaller Screen -->
+			<h1 class="invisible">Aaron Paul Piotrowski</h1>
 			<article>
 				<h2><a href="unit1_projects/dbc1.html">About Me</a></h2>
 			</article>
@@ -60,7 +65,7 @@
 		</div>
 		<!-- Footer and Copyright -->
 		<footer>
-			<p><a href="#top-of-page" class="up-arrows">&uuarr; Back To Top &uuarr;</a></p>
+			<p><a href="#top-of-page" class="up-arrows">Back To Top &uuarr;</a></p>
 			<small>&copy; Aaron Piotrowski 2014</small>
 		</footer>
 	</body>

@@ -46,10 +46,8 @@ header h1 {
 #profile-photo {
 	width: 100%;
 	top: 10px;
-	text-align: center;
 	z-index: 3;
 	position: relative;
-	float: left;
 	margin: 0 auto;
 	position: fixed;
 }
@@ -113,6 +111,10 @@ BLOG POSTS
 	clear: both;
 }
 
+#posts h1.invisible {
+	display: none;
+}
+
 #posts article {
 	background-color: #f4f4f4;
 	opacity: .7;
@@ -122,6 +124,13 @@ BLOG POSTS
 	margin: 50px 0;
 	text-align: left;
 	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-webkit-transition-delay: .25s;
+	-moz-transition-delay: .25s;
+	transition-delay: .25s;
+}
+
+#posts article:hover {
+	box-shadow: 0 0 20px tomato;
 }
 
 #posts article h2 {
@@ -132,14 +141,8 @@ BLOG POSTS
 	text-decoration: none;
 }
 
-#posts article img {
-	position: relative;
-	margin: 10px auto;
-
-}
-
 /********************
-IMAGES
+IMAGES IN POSTS
 ********************/
 
 .screenshots {
@@ -167,6 +170,18 @@ footer {
 	border-top: 2px solid rgba(39, 40, 34, 1.0);
 }
 
+footer a {
+	float: right;
+	padding-right: 2%;
+	padding-bottom: 1.5%;
+}
+
+footer small {
+	float: left;
+	padding-left: 2%;
+	padding-top: 0.70%;
+}
+
 .up-arrows {
 	font-size: 1.25em;
 }
@@ -174,7 +189,6 @@ footer {
 /********************
 @media
 ********************/
-
 @media handheld, screen and (max-width: 900px) {
 	#profile-photo {
 		width: 100%;
