@@ -245,17 +245,19 @@ footer small {
 	}
 	header h1 {
 		margin-top: 10px;
+		font-size: 1em;
+		float:right;
 	}
 	footer {
 		opacity: 1.0;
 	}
 	#twitter {
 		margin-top: 25px;
-		margin-left: 30%;
+		margin-left: 35%;
 
 	}
 	#facebook {
-		margin-left: 30%;
+		margin-left: 35%;
 	}
 }
 
