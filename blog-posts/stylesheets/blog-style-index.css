@@ -50,6 +50,7 @@ header h1 {
 	position: relative;
 	margin: 0 auto;
 	position: fixed;
+	-webkit-transition-duration: 2s;
 }
 
 #profile-photo a img {
@@ -261,6 +262,9 @@ footer small {
 	}
 }
 
-@media handheld, screen and (max-width: 320px) {
+@media handheld, screen and (max-width: 420px) {
+	#profile-photo {
+		-webkit-transform: scale(.8);
 
+	}
 }
