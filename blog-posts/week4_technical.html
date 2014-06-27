@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Metadata -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Site Title -->
+		<title>Aaron Piotrowski DBC | Technical Blog</title>
+		<!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css'>
+		<!-- css links -->
+		<link rel="stylesheet" href="stylesheets/normalize.css">
+		<link rel="stylesheet" href="stylesheets/blog-style.css">
+	</head>
+	<body>
+		<div id="profile-photo">
+			<a href="../index.html"><img src="images/avatar-min.jpg" alt="Picture of Aaron Piotrowski"></a>
+		</div>
+		<header> 
+			<!-- Blog Title -->
+			<h1>Technical Week 4</h1>
+		</header>
+			<div id="facebook">
+				<a href="http://www.facebook.com/CandidKilsborne" target="_blank" class="above"><img src="images/facebook-wrap.png" alt="Facebook Logo"></a>
+			</div>
+			<div id="twitter">
+				<a href="http://www.twitter.com/CandidKilsborne" target="_blank"><img src="images/twitter-wrap.png" alt="Twitter Logo"></a>
+			</div>
+		<!-- Fix that 'back to top' won't place content under the header -->
+		<div id="top-of-page">
+			<br>
+		</div>		
+		<!-- Blog Posts -->
+		<div id="posts">
+			<article>
+				<h2><img src="images/thinking-in-ruby.jpg"/></h2>
+				<h2>Enumerable's</h2>
+				<p>The Enumerable module provides a set of methods to traverse, search, sort and manipulate collections. What exactly is a module though? A module is very close to the Class class, the Module class is the immediate ancestor of the Class class.</p>
+				<p>All the Enumerable methods are based of the each method. Looking at Enumerable#map, it transforms each element in the array without altering the original. Of course you can make it alter the original if you like by using map!. When map (or map!) is invoked, it accepts a block of code that acts upon each element in the collection. You can see how map is based off the each method, it effects ‘each’ element.</p>
+			</article>
+			<article>
+				<h2>Enumerable#map</h2>
+				<p>You can’t necessarily use each instead of map though. Using each on an array that you are tying to alter, say turn all the values to negative versions of them, would just cause x to point to another object. Where as map takes the element and then assigns it to its negative counterpart.</p>
+				<p style="text-align: center">With each.</p>
+				<h2><img src="images/each.png" alt=""/></h2>
+				<p style="text-align: center">With map.</p>
+				<h2><img src="images/map.png" alt=""/></h2>
+			</article>
+			<article>
+				<h2>Array's &amp; Hashes</h2>
+				<p>An array is an ordered collection of objects that you can select based on a numerical index. If the order changes, you can’t just ask for what used to be at index 0 before the change, it just gives you what’s at index 0 currently. Where as hashes store objects in pairs. Each pair has a ‘key’ and a ‘value’. The hash can be put in any order because you just need the key to get the value that’s assigned to it. In a way, the hashes key serves as the index for the hash. This lets you search for an index that is outside of a number. Hashes are good for storing information in pairs that relate to one another, people’s initials could be a key and their full name could be a value.</p>
+				<p>Both types of collections use the Enumerable module to sort, filter, count and change the collections. Also both array’s and hashes are objects in Ruby so you can assign them to variables and send them messages.</p>
+			</article>
+		</div>
+		<!-- Fix that bottom of page won't place content under the footer -->
+		<div id="top-of-page">
+			<br><br><br>
+		</div>
+		<!-- Footer and Copyright -->
+		<footer>
+			<p><a href="#top-of-page" class="up-arrows">Back To Top &uuarr;</a></p>
+			<small>&copy; Aaron Piotrowski 2014</small>
+		</footer>
+	</body>
+</html>
+
+
