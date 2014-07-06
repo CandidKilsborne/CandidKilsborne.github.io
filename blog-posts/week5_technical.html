@@ -35,7 +35,10 @@
 			<article>
 				<h2><img src="images/blog-images/ruby-img-for-class.jpg" alt="Ruby Programming Logo"/></h2>
 				<h2>Classes</h2>
-				<p></p>
+				<p>Classes in Ruby are the blueprint of an object. The rule that everything in Ruby is an object applies to them as well. So they are the objects that build other objects. They can hold specific methods for the objects that are created from it. From the outside they can look very intimidating but once you start to make and use them, they become much more understandable and easy to use.</p>
+				<p>When making a class, two important parts to think about are what that class ‘knows’ and what that class ‘does’. If you decide that you want to have a class that holds (‘knows’) information passed into it, you need to make those variables instance variables. An instance variable can be used all throughout the class once it has been initialized. This way when you want your class to do something using methods (the ‘does’ part) they have access to the variable. If you didn’t make the variables instance variables you would not be able to use them due to variable scope. Having the instance variables makes all the variables and methods that call them in your class play nicely together.</p>  
+				<p>When creating a class, you don’t have to start out with the most accurate definition of it. Classes are able to inherit parts of their parent class. The classic example of this is the pet problem. If you wanted to make a class for each of your pets, but say you have a dog, a cat, a fish, and a turtle. You could make a pet class and use that as a starting point for all of the individual classes. Since all your pets share some common properties. They all have a name, an age, and a favorite food. You can have the classes inherit all of those from its parent pet class.</p>
+				<p>And just like objects where you could set a variable ‘Hash.new’, you instantiate a new instance object from a class by calling ‘ClassName.new’. With this you can create many different objects from one class. Just remember the class hierarchy and make sure that it makes sense for some class to inherit another classes parameters. Making a ‘shoe’ class that inherits from the ‘pet’ class wouldn’t make any sense. Sometimes it is better to start a new class hierarchy and branch from that one.</p>
 			</article>
 
 		</div>
