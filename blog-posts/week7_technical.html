@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Metadata -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Site Title -->
+		<title>Aaron Piotrowski DBC | Technical Blog</title>
+		<!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css'>
+		<!-- css links -->
+		<link rel="stylesheet" href="stylesheets/normalize.css">
+		<link rel="stylesheet" href="stylesheets/blog-style.css">
+		<!-- Google Analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-52605425-2', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	</head>
+	<body>
+		<div id="profile-photo">
+			<a href="../index.html"><img src="images/avatar-min.jpg" alt="Picture of Aaron Piotrowski"></a>
+		</div>
+		<header> 
+			<!-- Blog Title -->
+			<h1>Technical Week 7</h1>
+		</header>
+			<div id="facebook">
+				<a href="http://www.facebook.com/CandidKilsborne" target="_blank" class="above"><img src="images/facebook-wrap.png" alt="Facebook Logo"></a>
+			</div>
+			<div id="twitter">
+				<a href="http://www.twitter.com/CandidKilsborne" target="_blank"><img src="images/twitter-wrap.png" alt="Twitter Logo"></a>
+			</div>
+		<!-- Fix that 'back to top' won't place content under the header -->
+		<div id="top-of-page">
+			<br>
+		</div>		
+		<!-- Blog Posts -->
+		<div id="posts">
+			<article>
+				<h2>SQL Injection</h2>
+				<h2><img src="images/sql-injection.png" alt=""></h2>
+			</article>
+			<article>
+				<h2>What is SQL Injection?</h2>
+				<p>Is a technique used to attack data driven web applications. It exploits security vulnerabilities in the application being attacked.  A SQL injection attack consists of injecting a SQL query from client side input data fields, allowing the attacker to read sensitive data and or modify (create, insert, update, delete) the data on the database.</p>
+			</article>
+			<article>
+				<h2>Why is SQL Injection a Problem?</h2>
+				<p>SQL Injection attacks can completely destroy your database of users or have a breach in the security and give the attacker all of your users information, passwords, usernames, address’s, credit card numbers the list can go on and on. We all have received emails saying that some company’s system has been breached and we should go and change our passwords immediately. This is most likely due to an SQL attack. People can also use SQL injections to get around user authentication. 0’or’0’=’0 is a popular SQL injection to bypass passwords. This is also used to bypass the username field sometimes as well.</p>
+			</article>
+			<article>
+				<h2>What Can Programmers Do?</h2>
+				<p>The most common solution to minimize SQL injections involves running any submitted data through a function to ensure that any dangerous characters like " ' " are not passed to a SQL query in data.</p>
+			</article>
+		</div>
+		<!-- Fix that bottom of page won't place content under the footer -->
+		<div id="top-of-page">
+			<br><br><br>
+		</div>
+		<!-- Footer and Copyright -->
+		<footer>
+			<p><a href="#top-of-page" class="up-arrows">Back To Top &uuarr;</a></p>
+			<small>&copy; Aaron Piotrowski 2014</small>
+		</footer>
+	</body>
+</html>
+
+
