@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Metadata -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Site Title -->
+		<title>Aaron Piotrowski DBC | Technical Blog</title>
+		<!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css'>
+		<!-- css links -->
+		<link rel="stylesheet" href="stylesheets/normalize.css">
+		<link rel="stylesheet" href="stylesheets/blog-style.css">
+		<!-- Google Analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-52605425-2', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	</head>
+	<body>
+		<div id="profile-photo">
+			<a href="../index.html"><img src="images/avatar-min.jpg" alt="Picture of Aaron Piotrowski"></a>
+		</div>
+		<header> 
+			<!-- Blog Title -->
+			<h1>Technical Week 8</h1>
+		</header>
+			<div id="facebook">
+				<a href="http://www.facebook.com/CandidKilsborne" target="_blank" class="above"><img src="images/facebook-wrap.png" alt="Facebook Logo"></a>
+			</div>
+			<div id="twitter">
+				<a href="http://www.twitter.com/CandidKilsborne" target="_blank"><img src="images/twitter-wrap.png" alt="Twitter Logo"></a>
+			</div>
+		<!-- Fix that 'back to top' won't place content under the header -->
+		<div id="top-of-page">
+			<br>
+		</div>		
+		<!-- Blog Posts -->
+		<div id="posts">
+			<article>
+				<h2>Regular Expressions</h2>
+				<h2><img src="images/regex.jpg" alt=""></h2>
+				<p>Regular expressions began to emerge when mathematician Stephen Kleene wrote his book “Introduction to Metamathematics” which was published back in 1952. Regular expressions were actually created before that, but that book help to become popular. What is a regular expression though? A regular expression is a sequence of characters that forms a search pattern. So if you wanted to find if a certain word or phrase is used in some text, you can write a regular expression and it will tell you if that pattern exists in the text. Some programming languages actually have their own version of regular expressions(Perl, Java, JavaScript, C#, Ruby), which sometimes are very different from Unix command-line tools like vim and grep.</p>
+				<p>Some ways that you would use regular expressions, which is also very commonly known as regex, are just by searching with a literal character. You can also use a character set to match only one out of several characters. No matter what you are trying to find regex has some pattern to help you find anything from digits, to non-printable characters(Unicode), to repetition.</p>
+				<p>Regex can also be extremely simplistic such as <code>\d</code> or something as complicated as <code>^(\(\d{3}\)|^\d{3}[.-]?)?\d{3}[.-]?\d{4}$</code>. Looks complicated, all that does is mach a phone number, with or without parentheses around the area code, or with or without hyphens or periods to separate the numbers.</p>
+				<p>Here are a couple examples of regex.</p>
+				<p>This first one shows all the matches to the number <code>7</code> in the test number.</p>
+				<img src="images/Regex_Tester_01.jpg" alt="">
+				<p>This shows the complete match of the phone number.</p>
+				<img src="images/Regex_Tester_02.jpg" alt="">
+				<p>This shows the all the matching numbers from <code>0</code> to <code>9</code>.</p>
+				<img src="images/Regex_Tester_03.jpg" alt="">
+			</article>
+			<article>
+				<h2>Metacharacters</h2>
+				<h2><img src="images/metacharacters.jpg" alt=""></h2>
+				<p>These characters have special meanings in regex. The backslash <code>\</code>, the caret <code>^</code>, the dollar sign <code>$</code>, the period or dot <code>.</code>, the vertical bar or pipe symbol <code>|</code>, the question mark <code>?</code>, the asterisk or star <code>*</code>, the plus sign <code>+</code>, the opening parenthesis <code>(</code>, the closing parenthesis <code>)</code>, the opening square bracket <code>[</code>, and the opening curly brace <code>{</code>.</p>
+			</article>
+		</div>
+		<!-- Fix that bottom of page won't place content under the footer -->
+		<div id="top-of-page">
+			<br><br><br>
+		</div>
+		<!-- Footer and Copyright -->
+		<footer>
+			<p><a href="#top-of-page" class="up-arrows">Back To Top &uuarr;</a></p>
+			<small>&copy; Aaron Piotrowski 2014</small>
+		</footer>
+	</body>
+</html>
+
+
