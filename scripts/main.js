@@ -117,6 +117,20 @@ const languageColors = {
   JavaScript: '#f1e05a',
   TypeScript: '#2b7489',
   Vue: '#41b883',
+  HTML: '#e34c26',
+  CSS: '#563d7c',
+  Python: '#3572A5',
+  Java: '#b07219',
+  C: '#555555',
+  'C++': '#f34b7d',
+  PHP: '#4F5D95',
+  Ruby: '#701516',
+  Swift: '#ffac45',
+  Go: '#00ADD8',
+  Kotlin: '#A97BFF',
+  Rust: '#dea584',
+  'C#': '#178600',
+  '.NET': '#512BD4',
 };
 
 document.querySelectorAll('.project-item').forEach(item => {
