@@ -1,122 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Metadata -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- Site Title -->
-		<title>Aaron Piotrowski DBC</title>
-		<!-- Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css'>
-		<!-- css links -->
-		<link rel="stylesheet" href="blog-posts/stylesheets/normalize.css">
-		<link rel="stylesheet" href="blog-posts/stylesheets/blog-style.css">
-		<link rel="stylesheet" href="blog-posts/stylesheets/blog-style-index.css">
-		<link rel="shortcut icon" type="image/png" href="ap-favicon.png">
-		<!-- Google Analytics -->
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-52605425-2', 'auto');
-		  ga('send', 'pageview');
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aaron Piotrowski - Personal Portfolio</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/layout.css" type="text/css">
+</head>
 
-		</script>
-	</head>
-	<body>
-		<div id="profile-photo">
-			<a href="index.html"><img src="blog-posts/images/avatar-min.jpg" alt="Picture of Aaron Piotrowski"></a>
-		</div>
-		<header>
-			<!-- Blog Title -->
-			<h1>Aaron Paul Piotrowski</h1>
-		</header>
-			<div id="facebook">
-				<a href="http://www.facebook.com/CandidKilsborne" target="_blank"><img src="blog-posts/images/facebook-wrap.png" alt="Facebook Logo"></a>
+<body>
+	<header>
+		<div class="logo">Aaron Piotrowski</div>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#recommendations">Recommendations</a></li>
+			</ul>
+		</nav>
+		<button id="dark-mode-toggle" aria-label="Toggle dark mode">
+			<i class="fas fa-moon"></i>
+		</button>
+	</header>
+
+	<main id="top">
+		<section id="about">
+			<div class="about-me">
+				<img src="./assets/personal_headshot_compressed.jpg" alt="Profile photo of Aaron Piotrowski"
+					class="profile-image">
+				<div>
+					<h1>Aaron Piotrowski</h1>
+					<p>I'm Aaron, a unique blend of artist and technologist. My career began in the realm of 3D art,
+						where I brought my imaginative concepts to life. This artistic journey took an intriguing turn
+						when I discovered programming, allowing me to elevate my creations into interactive,
+						fully-functional applications. My professional experience is diverse, encompassing game
+						animation, tailored frontend designs for Fortune 500 companies, Angular web-app development, and
+						crafting immersive AR/VR experiences for platforms like iOS, Android, HTC Vive, and Oculus Go.
+						In the office, I'm known for my insights on the latest Apple releases and my enthusiastic
+						debates on the merits of various technologies. At the heart of my work is a deep-seated passion
+						for pioneering solutions that not only address challenges but also create significant value for
+						users. My fusion of creative vision and technical expertise makes me an integral player in the
+						ever-evolving digital landscape.</p>
+				</div>
 			</div>
-			<div id="twitter">
-				<a href="http://www.twitter.com/CandidKilsborne" target="_blank"><img src="blog-posts/images/twitter-wrap.png" alt="Twitter Logo"></a>
+		</section>
+
+		<section id="skills">
+			<h2>Skills</h2>
+			<div class="skills-grid">
+				<div class="skill-item" data-color="#E44D26">
+					<i class="skill-icon fab fa-html5"></i>
+					<span>HTML5</span>
+					<input type="range" min="0" max="10" value="10" class="skill-slider" disabled
+						title="HTML5 skill level">
+					<span class="skill-years">10+ years</span>
+				</div>
+				<div class="skill-item" data-color="#264DE4">
+					<i class="skill-icon fab fa-css3-alt"></i>
+					<span>CSS3</span>
+					<input type="range" min="0" max="10" value="10" class="skill-slider" disabled
+						title="CSS3 skill level">
+					<span class="skill-years">10+ years</span>
+				</div>
+				<div class="skill-item" data-color="#F7DF1E">
+					<i class="skill-icon fab fa-js"></i>
+					<span>JavaScript</span>
+					<input type="range" min="0" max="10" value="10" class="skill-slider" disabled
+						title="JavaScript skill level">
+					<span class="skill-years">10+ years</span>
+				</div>
+				<div class="skill-item" data-color="#61DAFB">
+					<i class="skill-icon fab fa-react"></i>
+					<span>React</span>
+					<input type="range" min="0" max="10" value="4" class="skill-slider" disabled
+						title="React skill level">
+					<span class="skill-years">4 years</span>
+				</div>
+				<div class="skill-item" data-color="#339933">
+					<i class="skill-icon fab fa-node-js"></i>
+					<span>Node.js</span>
+					<input type="range" min="0" max="10" value="7" class="skill-slider" disabled
+						title="Node.js skill level">
+					<span class="skill-years">7 years</span>
+				</div>
+				<div class="skill-item" data-color="#F05032">
+					<i class="skill-icon fab fa-git-alt"></i>
+					<span>Git</span>
+					<input type="range" min="0" max="10" value="10" class="skill-slider" disabled
+						title="Git skill level">
+					<span class="skill-years">10+ years</span>
+				</div>
+				<div class="skill-item" data-color="#178600">
+					<i class="skill-icon fab fa-microsoft"></i>
+					<span>C#</span>
+					<input type="range" min="0" max="10" value="6" class="skill-slider" disabled title="C# skill level">
+					<span class="skill-years">6 years</span>
+				</div>
+				<div class="skill-item" data-color="#512BD4">
+					<i class="skill-icon fab fa-windows"></i>
+					<span>.NET</span>
+					<input type="range" min="0" max="10" value="4" class="skill-slider" disabled title="Skill level">
+					<span class="skill-years">4 years</span>
+				</div>
+				<div class="skill-item" data-color="#5C2D91">
+					<i class="skill-icon fas fa-fire"></i>
+					<span>Blazor</span>
+					<input type="range" min="0" max="10" value="2" class="skill-slider" disabled
+						title="Blazor skill level">
+					<span class="skill-years">2 years</span>
+				</div>
+				<div class="skill-item" data-color="#0089D6">
+					<i class="skill-icon fab fa-microsoft"></i>
+					<span>Azure</span>
+					<input type="range" min="0" max="10" value="4" class="skill-slider" disabled
+						title="Azure skill level">
+					<span class="skill-years">4 years</span>
+				</div>
+				<div class="skill-item" data-color="#012456">
+					<i class="skill-icon fas fa-terminal"></i>
+					<span>PowerShell</span>
+					<input type="range" min="0" max="10" value="2" class="skill-slider" disabled
+						title="PowerShell skill level">
+					<span class="skill-years">2 years</span>
+				</div>
+				<div class="skill-item" data-color="#3776AB">
+					<i class="skill-icon fab fa-python"></i>
+					<span>Python</span>
+					<input type="range" min="0" max="10" value="2" class="skill-slider" disabled
+						title="Python skill level">
+					<span class="skill-years">2 years</span>
+				</div>
+				<div class="skill-item" data-color="#512BD4">
+					<i class="skill-icon fas fa-mobile-alt"></i>
+					<span>MAUI</span>
+					<input type="range" min="0" max="10" value="1" class="skill-slider" disabled
+						title="MAUI skill level">
+					<span class="skill-years">1 year</span>
+				</div>
+				<div class="skill-item" data-color="#0078D4">
+					<i class="skill-icon fas fa-database"></i>
+					<span>CosmosDB</span>
+					<input type="range" min="0" max="10" value="2" class="skill-slider" disabled
+						title="CosmosDB skill level">
+					<span class="skill-years">2 years</span>
+				</div>
+				<div class="skill-item" data-color="#CC2927">
+					<i class="skill-icon fas fa-database"></i>
+					<span>MSSQL</span>
+					<input type="range" min="0" max="10" value="3" class="skill-slider" disabled
+						title="MSSQL skill level">
+					<span class="skill-years">3 years</span>
+				</div>
 			</div>
-		<!-- Fix that 'back to top' won't place content under the header -->
-		<div id="top-of-page">
-			<br>
-		</div>
-		<!-- Blog Posts -->
-		<div id="posts" class="index">
-			<article>
-				<h2><a href="blog-posts/week8_cultural.html">Week 8 Cultural Blog</a></h2>
-			</article>
-			<article>
-				<h2><a href="blog-posts/week8_technical.html">Week 8 Technical Blog</a></h2>
-			</article>
-			<article>
-				<h2><a href="blog-posts/week8_blogging.html">Blogging</a></h2>
-			</article>
-			<article>
-				<h2><a href="blog-posts/week7_cultural.html">Week 7 Cultural Blog</a></h2>
-			</article>
-			<article>
-				<h2><a href="blog-posts/week7_technical.html">Week 7 Technical Blog</a></h2>
-			</article>
-			<article>
-				<h2><a href="blog-posts/week6_cultural.html">Week 6 Cultural Blog</a></h2>
-			</article>
-			<article>
-				<h2><a href="blog-posts/week6_technical.html">Week 6 Technical Blog</a></h2>
-			</article>
-			<article>
-				<h2><a href="blog-posts/week5_cultural.html">Week 5 Cultural Blog</a></h2>
-			</article>
-			<article>
-				<h2><a href="blog-posts/week5_technical.html">Week 5 Technical Blog</a></h2>
-			</article>
-			<article>
-				<h2><a href="blog-posts/week4_technical.html">Week 4 Technical Blog</a></h2>
-			</article>
-			<article>
-				<h2><a href="blog-posts/week4_cultural.html">Week 4 Cultural Blog</a></h2>
-			</article>
-			<article>
-				<h2><a href="blog-posts/week3_cultural.html">Week 3 Cultural Blog</a></h2>
-			</article>
-			<article>
-				<h2><a href="blog-posts/week3_technical.html">Week 3 Technical Blog</a></h2>
-			</article>
-			<article>
-				<h2><a href="unit1_projects/my_wireframe.html">Design Project</a></h2>
-			</article>
-			<article>
-				<h2><a href="blog-posts/week2_technical.html">Week 2 Technical Blog</a></h2>
-			</article>
-			<article>
-				<h2><a href="unit1_projects/class1/practice/index.html">Women in Computing</a></h2>
-			</article>
-			<article>
-				<h2><a href="unit1_projects/gps1.1.html">GPS 1.1</a></h2>
-			</article>
-			<article>
-				<h2><a href="unit1_projects/wireframe_sites.html">Wireframes Project</a></h2>
-			</article>
-			<article>
-				<h2><a href="blog-posts/week1_cultural.html">Week 1 Cultural Blog</a></h2>
-			</article>
-			<article>
-				<h2><a href="blog-posts/week1_technical.html">Week 1 Technical Blog</a></h2>
-			</article>
-			<article>
-				<h2><a href="unit1_projects/dbc1.html">About Me</a></h2>
-			</article>
-		</div>
-		<!-- Fix that bottom of page won't place content under the footer -->
-		<div id="top-of-page">
-			<br><br><br>
-		</div>
-		<!-- Footer and Copyright -->
-		<footer>
-			<p><a href="#top-of-page" class="up-arrows">Back To Top &uuarr;</a></p>
-			<small>&copy; Aaron Piotrowski 2014</small>
-		</footer>
-	</body>
+		</section>
+
+		<section id="projects">
+			<h2>Projects</h2>
+			<div class="projects-grid">
+				<div class="project-item">
+					<div class="project-header">
+						<i class="project-icon fas fa-book"></i>
+						<h3 class="project-title">E-commerce Platform</h3>
+					</div>
+					<p class="project-description">A full-stack e-commerce platform built with React, Node.js, and
+						MongoDB. Features include user authentication, product catalog, shopping cart, and payment
+						integration.</p>
+					<div class="project-footer">
+						<div class="project-language">
+							<span class="language-dot"></span>
+							JavaScript
+						</div>
+						<div class="project-stats">
+							<div class="stat-item">
+								<i class="stat-icon fas fa-star"></i>
+								<span>24</span>
+							</div>
+							<div class="stat-item">
+								<i class="stat-icon fas fa-code-branch"></i>
+								<span>8</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="project-item">
+					<div class="project-header">
+						<i class="project-icon fas fa-cloud-sun"></i>
+						<h3 class="project-title">Weather App</h3>
+					</div>
+					<p class="project-description">A responsive weather application using React and the OpenWeatherMap
+						API. Provides real-time weather information and forecasts for any location worldwide.</p>
+					<div class="project-footer">
+						<div class="project-language">
+							<span class="language-dot"></span>
+							TypeScript
+						</div>
+						<div class="project-stats">
+							<div class="stat-item">
+								<i class="stat-icon fas fa-star"></i>
+								<span>18</span>
+							</div>
+							<div class="stat-item">
+								<i class="stat-icon fas fa-code-branch"></i>
+								<span>5</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="project-item">
+					<div class="project-header">
+						<i class="project-icon fas fa-tasks"></i>
+						<h3 class="project-title">Task Management System</h3>
+					</div>
+					<p class="project-description">A collaborative task management system built with Vue.js and
+						Firebase. Features include real-time updates, task assignment, and progress tracking.</p>
+					<div class="project-footer">
+						<div class="project-language">
+							<span class="language-dot"></span>
+							Vue
+						</div>
+						<div class="project-stats">
+							<div class="stat-item">
+								<i class="stat-icon fas fa-star"></i>
+								<span>32</span>
+							</div>
+							<div class="stat-item">
+								<i class="stat-icon fas fa-code-branch"></i>
+								<span>12</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="recommendations">
+			<h2>Recommendations</h2>
+			<div class="recommendations-grid" id="recommendations-list">
+				<div class="recommendation-item">
+					<p class="recommendation-text">"Your Name is an exceptional developer with a keen eye for detail.
+						Their work is always of the highest quality and delivered on time."</p>
+					<p class="recommendation-author">- Emily Johnson, Senior Developer at TechCorp</p>
+				</div>
+				<div class="recommendation-item">
+					<p class="recommendation-text">"I've had the pleasure of working with Your Name on several projects.
+						Their problem-solving skills and creativity are unmatched. A true asset to any team!"</p>
+					<p class="recommendation-author">- Michael Chen, Project Manager at InnovateTech</p>
+				</div>
+				<div class="recommendation-item">
+					<p class="recommendation-text">"Your Name has a unique ability to translate complex technical
+						concepts into user-friendly designs. Their full-stack expertise has been invaluable to our
+						projects."</p>
+					<p class="recommendation-author">- Sarah Thompson, UX Designer at DesignHub</p>
+				</div>
+			</div>
+			<form class="recommendation-form" id="recommendation-form">
+				<input type="text" placeholder="Your Name" required>
+				<input type="text" placeholder="Your Position" required>
+				<textarea placeholder="Your Recommendation" required></textarea>
+				<button type="submit">Submit Recommendation</button>
+			</form>
+		</section>
+	</main>
+
+	<a href="#top" class="home-icon" title="Home">
+		<i class="fas fa-home"></i>
+	</a>
+
+	<script src="scripts/main.js"></script>
+</body>
+
 </html>
