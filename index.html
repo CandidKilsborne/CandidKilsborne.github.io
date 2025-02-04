@@ -7,232 +7,10 @@
 	<title>Aaron Piotrowski - Personal Portfolio</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<style>
-		/* CSS styles */
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-
-		body {
-			font-family: Arial, sans-serif;
-			line-height: 1.6;
-			color: #333;
-		}
-
-		header {
-			background-color: #2c3e50;
-			color: #ecf0f1;
-			padding: 1rem;
-			position: fixed;
-			width: 100%;
-			top: 0;
-			z-index: 1000;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		}
-
-		.logo {
-			font-size: 1.5rem;
-			font-weight: bold;
-		}
-
-		nav ul {
-			display: flex;
-			list-style-type: none;
-		}
-
-		nav ul li {
-			margin-left: 1rem;
-		}
-
-		nav ul li a {
-			color: #ecf0f1;
-			text-decoration: none;
-			transition: all 0.3s ease;
-		}
-
-		nav ul li a:hover {
-			color: #3498db;
-			font-weight: bold;
-			cursor: pointer;
-		}
-
-		main {
-			max-width: 1200px;
-			margin: 80px auto 0;
-			padding: 2rem;
-		}
-
-		section {
-			margin-bottom: 3rem;
-		}
-
-		h1,
-		h2 {
-			margin-bottom: 1rem;
-		}
-
-		.about-me {
-			display: flex;
-			align-items: center;
-			gap: 2rem;
-		}
-
-		.profile-image {
-			width: 200px;
-			height: 200px;
-			border-radius: 50%;
-			object-fit: cover;
-		}
-
-		.skills-grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-			gap: 1rem;
-		}
-
-		.skill-item {
-			background-color: #ecf0f1;
-			padding: 1rem;
-			border-radius: 5px;
-			text-align: center;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			transition: transform 0.3s ease;
-		}
-
-		.skill-item:hover {
-			transform: translateY(-5px);
-		}
-
-		.skill-item i {
-			font-size: 2rem;
-			margin-bottom: 0.5rem;
-		}
-
-		.skill-item span {
-			font-size: 0.9rem;
-			margin-bottom: 0.5rem;
-		}
-
-		.skill-slider {
-			width: 100%;
-			-webkit-appearance: none;
-			appearance: none;
-			height: 5px;
-			background: #d3d3d3;
-			outline: none;
-			opacity: 0.7;
-			transition: opacity 0.2s;
-			margin-bottom: 0.5rem;
-		}
-
-		.skill-slider:hover {
-			opacity: 1;
-		}
-
-		.skill-slider::-webkit-slider-thumb {
-			-webkit-appearance: none;
-			appearance: none;
-			width: 15px;
-			height: 15px;
-			background: #2c3e50;
-			cursor: pointer;
-			border-radius: 50%;
-		}
-
-		.skill-slider::-moz-range-thumb {
-			width: 15px;
-			height: 15px;
-			background: #2c3e50;
-			cursor: pointer;
-			border-radius: 50%;
-		}
-
-		.skill-years {
-			font-size: 0.8rem;
-			color: #666;
-		}
-
-		.projects-grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-			gap: 2rem;
-		}
-
-		.project-item {
-			background-color: #ecf0f1;
-			padding: 1rem;
-			border-radius: 5px;
-		}
-
-		.project-item img {
-			max-width: 100%;
-			height: auto;
-			border-radius: 5px;
-		}
-
-		.recommendations-grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-			gap: 2rem;
-		}
-
-		.recommendation-item {
-			background-color: #ecf0f1;
-			padding: 1rem;
-			border-radius: 5px;
-		}
-
-		.recommendation-form {
-			margin-top: 2rem;
-			display: flex;
-			flex-direction: column;
-			gap: 1rem;
-		}
-
-		.recommendation-form input,
-		.recommendation-form textarea {
-			padding: 0.5rem;
-			border: 1px solid #ccc;
-			border-radius: 5px;
-		}
-
-		.recommendation-form button {
-			padding: 0.5rem 1rem;
-			background-color: #2c3e50;
-			color: #ecf0f1;
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-		}
-
-		.home-icon {
-			position: fixed;
-			bottom: 20px;
-			right: 20px;
-			font-size: 2rem;
-			color: #2c3e50;
-			text-decoration: none;
-		}
-
-		@media (max-width: 768px) {
-
-			.skills-grid,
-			.projects-grid,
-			.recommendations-grid {
-				grid-template-columns: 1fr;
-			}
-
-			.about-me {
-				flex-direction: column;
-			}
-		}
-	</style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/layout.css" type="text/css">
 </head>
 
 <body>
@@ -246,6 +24,9 @@
 				<li><a href="#recommendations">Recommendations</a></li>
 			</ul>
 		</nav>
+		<button id="dark-mode-toggle" aria-label="Toggle dark mode">
+			<i class="fas fa-moon"></i>
+		</button>
 	</header>
 
 	<main id="top">
@@ -273,95 +54,108 @@
 		<section id="skills">
 			<h2>Skills</h2>
 			<div class="skills-grid">
-				<div class="skill-item">
-					<i class="fab fa-html5"></i>
+				<div class="skill-item" data-color="#E44D26">
+					<i class="skill-icon fab fa-html5"></i>
 					<span>HTML5</span>
-					<input type="range" min="0" max="10" value="5" class="skill-slider" disabled>
-					<span class="skill-years">5 years</span>
+					<input type="range" min="0" max="10" value="10" class="skill-slider" disabled
+						title="HTML5 skill level">
+					<span class="skill-years">10+ years</span>
 				</div>
-				<div class="skill-item">
-					<i class="fab fa-css3-alt"></i>
+				<div class="skill-item" data-color="#264DE4">
+					<i class="skill-icon fab fa-css3-alt"></i>
 					<span>CSS3</span>
-					<input type="range" min="0" max="10" value="5" class="skill-slider" disabled>
-					<span class="skill-years">5 years</span>
+					<input type="range" min="0" max="10" value="10" class="skill-slider" disabled
+						title="CSS3 skill level">
+					<span class="skill-years">10+ years</span>
 				</div>
-				<div class="skill-item">
-					<i class="fab fa-js"></i>
+				<div class="skill-item" data-color="#F7DF1E">
+					<i class="skill-icon fab fa-js"></i>
 					<span>JavaScript</span>
-					<input type="range" min="0" max="10" value="4" class="skill-slider" disabled>
-					<span class="skill-years">4 years</span>
+					<input type="range" min="0" max="10" value="10" class="skill-slider" disabled
+						title="JavaScript skill level">
+					<span class="skill-years">10+ years</span>
 				</div>
-				<div class="skill-item">
-					<i class="fab fa-react"></i>
+				<div class="skill-item" data-color="#61DAFB">
+					<i class="skill-icon fab fa-react"></i>
 					<span>React</span>
-					<input type="range" min="0" max="10" value="3" class="skill-slider" disabled>
-					<span class="skill-years">3 years</span>
-				</div>
-				<div class="skill-item">
-					<i class="fab fa-node-js"></i>
-					<span>Node.js</span>
-					<input type="range" min="0" max="10" value="3" class="skill-slider" disabled>
-					<span class="skill-years">3 years</span>
-				</div>
-				<div class="skill-item">
-					<i class="fab fa-git-alt"></i>
-					<span>Git</span>
-					<input type="range" min="0" max="10" value="4" class="skill-slider" disabled>
+					<input type="range" min="0" max="10" value="4" class="skill-slider" disabled
+						title="React skill level">
 					<span class="skill-years">4 years</span>
 				</div>
-				<div class="skill-item">
-					<i class="fab fa-microsoft"></i>
+				<div class="skill-item" data-color="#339933">
+					<i class="skill-icon fab fa-node-js"></i>
+					<span>Node.js</span>
+					<input type="range" min="0" max="10" value="7" class="skill-slider" disabled
+						title="Node.js skill level">
+					<span class="skill-years">7 years</span>
+				</div>
+				<div class="skill-item" data-color="#F05032">
+					<i class="skill-icon fab fa-git-alt"></i>
+					<span>Git</span>
+					<input type="range" min="0" max="10" value="10" class="skill-slider" disabled
+						title="Git skill level">
+					<span class="skill-years">10+ years</span>
+				</div>
+				<div class="skill-item" data-color="#178600">
+					<i class="skill-icon fab fa-microsoft"></i>
 					<span>C#</span>
-					<input type="range" min="0" max="10" value="6" class="skill-slider" disabled>
+					<input type="range" min="0" max="10" value="6" class="skill-slider" disabled title="C# skill level">
 					<span class="skill-years">6 years</span>
 				</div>
-				<div class="skill-item">
-					<i class="fab fa-windows"></i>
+				<div class="skill-item" data-color="#512BD4">
+					<i class="skill-icon fab fa-windows"></i>
 					<span>.NET</span>
-					<input type="range" min="0" max="10" value="5" class="skill-slider" disabled>
-					<span class="skill-years">5 years</span>
-				</div>
-				<div class="skill-item">
-					<i class="fas fa-fire"></i>
-					<span>Blazor</span>
-					<input type="range" min="0" max="10" value="2" class="skill-slider" disabled>
-					<span class="skill-years">2 years</span>
-				</div>
-				<div class="skill-item">
-					<i class="fab fa-microsoft"></i>
-					<span>Azure</span>
-					<input type="range" min="0" max="10" value="4" class="skill-slider" disabled>
+					<input type="range" min="0" max="10" value="4" class="skill-slider" disabled title="Skill level">
 					<span class="skill-years">4 years</span>
 				</div>
-				<div class="skill-item">
-					<i class="fas fa-terminal"></i>
-					<span>PowerShell</span>
-					<input type="range" min="0" max="10" value="3" class="skill-slider" disabled>
-					<span class="skill-years">3 years</span>
-				</div>
-				<div class="skill-item">
-					<i class="fab fa-python"></i>
-					<span>Python</span>
-					<input type="range" min="0" max="10" value="2" class="skill-slider" disabled>
+				<div class="skill-item" data-color="#5C2D91">
+					<i class="skill-icon fas fa-fire"></i>
+					<span>Blazor</span>
+					<input type="range" min="0" max="10" value="2" class="skill-slider" disabled
+						title="Blazor skill level">
 					<span class="skill-years">2 years</span>
 				</div>
-				<div class="skill-item">
-					<i class="fas fa-mobile-alt"></i>
+				<div class="skill-item" data-color="#0089D6">
+					<i class="skill-icon fab fa-microsoft"></i>
+					<span>Azure</span>
+					<input type="range" min="0" max="10" value="4" class="skill-slider" disabled
+						title="Azure skill level">
+					<span class="skill-years">4 years</span>
+				</div>
+				<div class="skill-item" data-color="#012456">
+					<i class="skill-icon fas fa-terminal"></i>
+					<span>PowerShell</span>
+					<input type="range" min="0" max="10" value="2" class="skill-slider" disabled
+						title="PowerShell skill level">
+					<span class="skill-years">2 years</span>
+				</div>
+				<div class="skill-item" data-color="#3776AB">
+					<i class="skill-icon fab fa-python"></i>
+					<span>Python</span>
+					<input type="range" min="0" max="10" value="2" class="skill-slider" disabled
+						title="Python skill level">
+					<span class="skill-years">2 years</span>
+				</div>
+				<div class="skill-item" data-color="#512BD4">
+					<i class="skill-icon fas fa-mobile-alt"></i>
 					<span>MAUI</span>
-					<input type="range" min="0" max="10" value="1" class="skill-slider" disabled>
+					<input type="range" min="0" max="10" value="1" class="skill-slider" disabled
+						title="MAUI skill level">
 					<span class="skill-years">1 year</span>
 				</div>
-				<div class="skill-item">
-					<i class="fas fa-database"></i>
+				<div class="skill-item" data-color="#0078D4">
+					<i class="skill-icon fas fa-database"></i>
 					<span>CosmosDB</span>
-					<input type="range" min="0" max="10" value="2" class="skill-slider" disabled>
+					<input type="range" min="0" max="10" value="2" class="skill-slider" disabled
+						title="CosmosDB skill level">
 					<span class="skill-years">2 years</span>
 				</div>
-				<div class="skill-item">
-					<i class="fas fa-database"></i>
+				<div class="skill-item" data-color="#CC2927">
+					<i class="skill-icon fas fa-database"></i>
 					<span>MSSQL</span>
-					<input type="range" min="0" max="10" value="5" class="skill-slider" disabled>
-					<span class="skill-years">5 years</span>
+					<input type="range" min="0" max="10" value="3" class="skill-slider" disabled
+						title="MSSQL skill level">
+					<span class="skill-years">3 years</span>
 				</div>
 			</div>
 		</section>
@@ -370,22 +164,77 @@
 			<h2>Projects</h2>
 			<div class="projects-grid">
 				<div class="project-item">
-					<img src="/placeholder.svg?height=200&width=300" alt="E-commerce Platform">
-					<h3>E-commerce Platform</h3>
-					<p>A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user
-						authentication, product catalog, shopping cart, and payment integration.</p>
+					<div class="project-header">
+						<i class="project-icon fas fa-book"></i>
+						<h3 class="project-title">E-commerce Platform</h3>
+					</div>
+					<p class="project-description">A full-stack e-commerce platform built with React, Node.js, and
+						MongoDB. Features include user authentication, product catalog, shopping cart, and payment
+						integration.</p>
+					<div class="project-footer">
+						<div class="project-language">
+							<span class="language-dot"></span>
+							JavaScript
+						</div>
+						<div class="project-stats">
+							<div class="stat-item">
+								<i class="stat-icon fas fa-star"></i>
+								<span>24</span>
+							</div>
+							<div class="stat-item">
+								<i class="stat-icon fas fa-code-branch"></i>
+								<span>8</span>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="project-item">
-					<img src="/placeholder.svg?height=200&width=300" alt="Weather App">
-					<h3>Weather App</h3>
-					<p>A responsive weather application using React and the OpenWeatherMap API. Provides real-time
-						weather information and forecasts for any location worldwide.</p>
+					<div class="project-header">
+						<i class="project-icon fas fa-cloud-sun"></i>
+						<h3 class="project-title">Weather App</h3>
+					</div>
+					<p class="project-description">A responsive weather application using React and the OpenWeatherMap
+						API. Provides real-time weather information and forecasts for any location worldwide.</p>
+					<div class="project-footer">
+						<div class="project-language">
+							<span class="language-dot"></span>
+							TypeScript
+						</div>
+						<div class="project-stats">
+							<div class="stat-item">
+								<i class="stat-icon fas fa-star"></i>
+								<span>18</span>
+							</div>
+							<div class="stat-item">
+								<i class="stat-icon fas fa-code-branch"></i>
+								<span>5</span>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="project-item">
-					<img src="/placeholder.svg?height=200&width=300" alt="Task Management System">
-					<h3>Task Management System</h3>
-					<p>A collaborative task management system built with Vue.js and Firebase. Features include real-time
-						updates, task assignment, and progress tracking.</p>
+					<div class="project-header">
+						<i class="project-icon fas fa-tasks"></i>
+						<h3 class="project-title">Task Management System</h3>
+					</div>
+					<p class="project-description">A collaborative task management system built with Vue.js and
+						Firebase. Features include real-time updates, task assignment, and progress tracking.</p>
+					<div class="project-footer">
+						<div class="project-language">
+							<span class="language-dot"></span>
+							Vue
+						</div>
+						<div class="project-stats">
+							<div class="stat-item">
+								<i class="stat-icon fas fa-star"></i>
+								<span>32</span>
+							</div>
+							<div class="stat-item">
+								<i class="stat-icon fas fa-code-branch"></i>
+								<span>12</span>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -394,19 +243,20 @@
 			<h2>Recommendations</h2>
 			<div class="recommendations-grid" id="recommendations-list">
 				<div class="recommendation-item">
-					<p>"Your Name is an exceptional developer with a keen eye for detail. Their work is always of the
-						highest quality and delivered on time."</p>
-					<p><strong>- Emily Johnson, Senior Developer at TechCorp</strong></p>
+					<p class="recommendation-text">"Your Name is an exceptional developer with a keen eye for detail.
+						Their work is always of the highest quality and delivered on time."</p>
+					<p class="recommendation-author">- Emily Johnson, Senior Developer at TechCorp</p>
 				</div>
 				<div class="recommendation-item">
-					<p>"I've had the pleasure of working with Your Name on several projects. Their problem-solving
-						skills and creativity are unmatched. A true asset to any team!"</p>
-					<p><strong>- Michael Chen, Project Manager at InnovateTech</strong></p>
+					<p class="recommendation-text">"I've had the pleasure of working with Your Name on several projects.
+						Their problem-solving skills and creativity are unmatched. A true asset to any team!"</p>
+					<p class="recommendation-author">- Michael Chen, Project Manager at InnovateTech</p>
 				</div>
 				<div class="recommendation-item">
-					<p>"Your Name has a unique ability to translate complex technical concepts into user-friendly
-						designs. Their full-stack expertise has been invaluable to our projects."</p>
-					<p><strong>- Sarah Thompson, UX Designer at DesignHub</strong></p>
+					<p class="recommendation-text">"Your Name has a unique ability to translate complex technical
+						concepts into user-friendly designs. Their full-stack expertise has been invaluable to our
+						projects."</p>
+					<p class="recommendation-author">- Sarah Thompson, UX Designer at DesignHub</p>
 				</div>
 			</div>
 			<form class="recommendation-form" id="recommendation-form">
@@ -418,66 +268,11 @@
 		</section>
 	</main>
 
-	<a href="#" class="home-icon">
+	<a href="#top" class="home-icon" title="Home">
 		<i class="fas fa-home"></i>
 	</a>
 
-	<script>
-		// Smooth scrolling for navigation links
-		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-			anchor.addEventListener('click', function (e) {
-				e.preventDefault();
-
-				document.querySelector(this.getAttribute('href')).scrollIntoView({
-					behavior: 'smooth'
-				});
-			});
-		});
-
-		// Add active class to navigation items on scroll
-		window.addEventListener('scroll', () => {
-			let current = '';
-			const sections = document.querySelectorAll('section');
-			const navItems = document.querySelectorAll('nav ul li a');
-
-			sections.forEach(section => {
-				const sectionTop = section.offsetTop;
-				if (pageYOffset >= sectionTop - 60) {
-					current = section.getAttribute('id');
-				}
-			});
-
-			navItems.forEach(item => {
-				item.classList.remove('active');
-				if (item.getAttribute('href').slice(1) === current) {
-					item.classList.add('active');
-				}
-			});
-		});
-
-		// Handle recommendation form submission
-		document.getElementById('recommendation-form').addEventListener('submit', function (e) {
-			e.preventDefault();
-			const name = this.elements[0].value;
-			const position = this.elements[1].value;
-			const recommendation = this.elements[2].value;
-
-			const newRecommendation = document.createElement('div');
-			newRecommendation.className = 'recommendation-item';
-			newRecommendation.innerHTML = `
-                <p>"${recommendation}"</p>
-                <p><strong>- ${name}, ${position}</strong></p>
-            `;
-
-			document.getElementById('recommendations-list').appendChild(newRecommendation);
-
-			// Reset form
-			this.reset();
-
-			// Show confirmation dialog
-			alert('Thank you for your recommendation!');
-		});
-	</script>
+	<script src="scripts/main.js"></script>
 </body>
 
 </html>
