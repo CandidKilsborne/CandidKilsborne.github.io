@@ -51,83 +51,18 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #3498db;
-  border-bottom: 4px solid;
+  border-bottom: 2px solid;
   border-image: linear-gradient(
       90deg,
-      #ff0000,
-      #ff7f00,
-      #ffff00,
-      #00ff00,
-      #0000ff,
-      #4b0082,
-      #8b00ff
+      #60a5fa,
+      #a78bfa,
+      #ec4899,
+      #f97316,
+      #fbbf24,
+      #4ade80
     )
     1;
   cursor: pointer;
-  animation: borderAnimation 3s linear infinite;
-}
-
-@keyframes borderAnimation {
-  0% {
-    border-image-source: linear-gradient(
-      90deg,
-      #ff0000,
-      #ff7f00,
-      #ffff00,
-      #00ff00,
-      #0000ff,
-      #4b0082,
-      #8b00ff
-    );
-  }
-  25% {
-    border-image-source: linear-gradient(
-      90deg,
-      #ff7f00,
-      #ffff00,
-      #00ff00,
-      #0000ff,
-      #4b0082,
-      #8b00ff,
-      #ff0000
-    );
-  }
-  50% {
-    border-image-source: linear-gradient(
-      90deg,
-      #ffff00,
-      #00ff00,
-      #0000ff,
-      #4b0082,
-      #8b00ff,
-      #ff0000,
-      #ff7f00
-    );
-  }
-  75% {
-    border-image-source: linear-gradient(
-      90deg,
-      #00ff00,
-      #0000ff,
-      #4b0082,
-      #8b00ff,
-      #ff0000,
-      #ff7f00,
-      #ffff00
-    );
-  }
-  100% {
-    border-image-source: linear-gradient(
-      90deg,
-      #8b00ff,
-      #4b0082,
-      #0000ff,
-      #00ff00,
-      #ffff00,
-      #ff7f00,
-      #ff0000
-    );
-  }
 }
 
 main {
@@ -656,6 +591,16 @@ footer {
 
 .button-icon:hover {
   background-color: var(--accent);
+}
+
+.download-resume {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .button-icon svg {
