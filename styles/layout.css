@@ -24,6 +24,7 @@ header {
   align-items: center;
 }
 
+#logo,
 .logo {
   font-family: 'Doto', serif;
   font-optical-sizing: auto;
@@ -471,70 +472,6 @@ footer {
   }
 }
 
-.download-resume-btn {
-  background-color: #2ea44f;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.download-resume-btn::before {
-  content: '📄';
-  font-size: 1.2rem;
-}
-
-.download-resume-btn:hover {
-  background-color: #2c974b;
-  transform: translateY(-2px);
-  border: 2px solid;
-  border-image: linear-gradient(
-      45deg,
-      red,
-      orange,
-      yellow,
-      green,
-      blue,
-      indigo,
-      violet
-    )
-    1;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    border-image-source: linear-gradient(
-      45deg,
-      red,
-      orange,
-      yellow,
-      green,
-      blue,
-      indigo,
-      violet
-    );
-  }
-  100% {
-    border-image-source: linear-gradient(
-      405deg,
-      red,
-      orange,
-      yellow,
-      green,
-      blue,
-      indigo,
-      violet
-    );
-  }
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -546,7 +483,7 @@ footer {
   top: 0;
   z-index: 50;
   border-bottom: 1px solid var(--border);
-  background-color: rgba(var(--background), 0.8);
+  /* background-color: rgba(var(--background), 0.8); */
   backdrop-filter: blur(10px);
 }
 
