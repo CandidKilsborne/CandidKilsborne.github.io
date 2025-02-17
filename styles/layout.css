@@ -51,7 +51,7 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #3498db;
-  border-bottom: 2px solid;
+  border-bottom: 4px solid;
   border-image: linear-gradient(
       90deg,
       #ff0000,
@@ -64,7 +64,7 @@ nav ul li a:hover {
     )
     1;
   cursor: pointer;
-  animation: borderAnimation 1s linear infinite;
+  animation: borderAnimation 3s linear infinite;
 }
 
 @keyframes borderAnimation {
@@ -78,6 +78,42 @@ nav ul li a:hover {
       #0000ff,
       #4b0082,
       #8b00ff
+    );
+  }
+  25% {
+    border-image-source: linear-gradient(
+      90deg,
+      #ff7f00,
+      #ffff00,
+      #00ff00,
+      #0000ff,
+      #4b0082,
+      #8b00ff,
+      #ff0000
+    );
+  }
+  50% {
+    border-image-source: linear-gradient(
+      90deg,
+      #ffff00,
+      #00ff00,
+      #0000ff,
+      #4b0082,
+      #8b00ff,
+      #ff0000,
+      #ff7f00
+    );
+  }
+  75% {
+    border-image-source: linear-gradient(
+      90deg,
+      #00ff00,
+      #0000ff,
+      #4b0082,
+      #8b00ff,
+      #ff0000,
+      #ff7f00,
+      #ffff00
     );
   }
   100% {
